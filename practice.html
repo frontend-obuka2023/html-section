@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Practice</title>
+        <!-- ! SEO koncepti kojima se mi necemo baviti -->
+        <meta name="description" content="Frontend course">
+        <meta name="keywords" content="HTML, CSS, JavaScript, GIT">
+    </head>
+    <body>
+        
+        <!-- * Primeri otvorajuce-zatvarajucih tag-va -->
+        <h1>Welcome to our new Website!</h1>
+        <p>This is our new website! Enjoy!</p>
+
+        <!-- * Primeri samozatvarajucih tag-ova -->
+        <br> <!-- ! Tag koji necete koristiti je br -->
+        <input type="number">
+
+        <br>
+        <br>
+
+        <!-- ! Paragraf -->
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <p>
+            Reprehenderit, dolor!
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing <strong>elit</strong>. 
+            Tempore autem accusantium possimus facere? 
+            Amet minima fugit vel impedit, <i>molestias aperiam!</i>
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet <span>consectetur</span> adipisicing elit. Esse, aperiam!
+        </p>
+
+        <!-- ! DIV (kontejner) -->
+        <div>
+            <h1>Random title</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <br><br>
+
+        <!-- ! Naslovi (headinzi) -->
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+
+        <br>
+        <br>
+
+        <!-- ! Liste -->
+        <h3>Unordered list</h3>
+
+        <!-- * default tip liste je type="disc" -->
+        <ul type="disc">
+            <li>Home</li>
+            <li>Contact</li>
+            <li>About</li>
+        </ul>
+
+        <ul type="square">
+            <li>Home</li>
+            <li>Contact</li>
+            <li>About</li>
+        </ul>
+
+        <ul type="circle">
+            <a href="https://google.com">Google</a>
+            <li>Contact</li>
+            <li>About</li>
+        </ul>
+
+        <br>
+        <h3>Ordered list</h3>
+
+        <ol>
+            <li>Home</li>
+            <li>Contact</li>
+            <li>About</li>
+        </ol>
+
+        <ol type="A">
+            <li>Home</li>
+            <li>Contact</li>
+            <li>About</li>
+        </ol>
+
+        <ol type="i">
+            <li>Home</li>
+            <li>Contact</li>
+            <li>About</li>
+            <li>Help</li>
+        </ol>
+
+        <br>
+        <!-- ! Retko se koristi -->
+        <h3>Definition list</h3>
+
+        <dl>
+            <dt>
+                Home
+            </dt>
+            <dd>
+                Home page of our new website
+            </dd>
+            <dt>
+                About
+            </dt>
+            <dd>
+                About page of our new website
+            </dd>
+        </dl>
+
+        <br>
+        <br>
+
+        <!-- ! Slike (Images) -->
+        <img 
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4gZHauSAw7rcGgUcy0p0MCe7jbK3k7fUSRv-HUI0_iSXfrYn7QBppOsQiwfbF1wKrW-A&usqp=CAU" 
+            alt="Facebook logo"
+        >
+
+        <br>
+        <br>
+
+        <!-- ! Links -->
+
+        <!-- * Ovaj primer otvara link u postojecem tab-u browser-a -->
+        <a href="https://twitter.com/realDonaldTrump">
+            <img 
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBepLdnf7EXMXyFtk6gib43YM_igdwURohUKIJvM534YJSe6D5D6AZUa1jm3qUuRuXukw&usqp=CAU" 
+                alt="Picture of Donald Trump"
+            >
+        </a>
+
+        <!-- * Ovaj primer otvara link u novom tab-u browser-a -->
+        <a href="https://twitter.com/realDonaldTrump" target="_blank">
+            <img 
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBepLdnf7EXMXyFtk6gib43YM_igdwURohUKIJvM534YJSe6D5D6AZUa1jm3qUuRuXukw&usqp=CAU" 
+                alt="Picture of Donald Trump"
+            >
+        </a>
+
+        <br>
+        <br>
+
+        <!-- ! Forms -->
+
+        <h3>Registration Form (example)</h3>
+
+        <form>
+            <label for="first-name">
+                Enter your first name:
+            </label>
+            <br>
+            <input type="text">
+            <br>
+            <label for="last-name">
+                Enter your last name:
+            </label>
+            <br>
+            <input type="text">
+            <br>
+            <label for="email">
+                Enter your email address:
+            </label>
+            <br>
+            <input type="email">
+            <br>
+            <label for="preferences">
+                Select your preferences:
+            </label>
+            <br>
+            <input name="music" id="music" type="checkbox" value="Music"> Music
+            <br>
+            <input name="movies" id="movies" type="checkbox" value="Movies"> Movies
+            <br>
+            <label for="comment">
+                Enter your comment:
+            </label>
+            <br>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+            <br>
+            <label for="selection">Select your favourite color:</label>
+            <br>
+            <select name="selection" id="selection">
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+            </select>
+            <br>
+            <br>
+            <button type="submit">
+                Submit your form
+            </button>
+        </form>
+
+    </body>
+</html>
